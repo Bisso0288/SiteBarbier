@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Le Barbier de Québec - Spécialiste de la barbe et des coupes de cheveux pour homme.
+      Le Barbier de Saint-Charles-Borromée - Spécialiste de la barbe et des coupes de cheveux pour homme.
     </title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,8 +16,40 @@
     />
   </head>
   <body>
+    <!-- Header -->
+    <header id="accueil">
+      <nav class="main-nav">
+        <button class="nav-toggler"
+        class="nav-toggler"
+        aria-controls="main-navlist"
+        aria-expanded="false"
+        >
+          <img src="ressources/hamburger.svg" alt="Ouvrir et fermer le menu">
+        </button>
+        <ul class="main-navlist">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#valeurs">Nos valeurs</a></li>
+          <li><a href="#prestations">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1 class="main-title">Votre barbier d'antan</h1>
+        <p class="main-subtitle">L'élégance du rasage, la maîtrise du geste.</p>
+        <a href="#prestations" class="hero-link hero-link-1">
+          <span>Services</span>
+          <img src="ressources/pack/010-electric.svg" alt="">
+        </a>
+        <a href="#prestations" class="hero-link hero-link-2">
+          <span>Contact</span>
+          <img src="ressources/pack/003-location-pin.svg" alt="">
+        </a>
 
- 
+        <a href="#valeurs" class="push-down-hero">
+          <img src="ressources/chevron-down.svg" alt="Aller vers la section nos valeurs">
+        </a>
+      </div>
+    </header>
 
     <script src="script.js"></script>
   </body>
