@@ -1,6 +1,5 @@
 # SiteBarbier
 Projet portfolio de formation
-# Site Barbier
 
 Bienvenue sur le projet **Site Barbier**, un site web moderne et élégant conçu pour un barbier. Ce projet utilise **HTML, CSS et JavaScript** pour offrir une expérience fluide et responsive.
 
