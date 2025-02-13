@@ -105,3 +105,135 @@ body {
     width: 20px;
   }
 }
+
+/* Hero */
+.hero{
+  min-height: 750px;
+  padding-top: 200px;
+  background-image: url(ressources/hero-background.jpg);
+  background-size: cover;
+  background-position: 50% 20%;
+  position:relative;
+  text-align: center;
+}
+.main-title{
+  font-family: var(--title-font);
+  font-size: var(--fs-72);
+  color: var(--main-white);
+  font-weight: 900;
+}
+.main-subtitle{
+  font-size: var(--fs-30);
+  margin-bottom: 28px;
+  color: var(--shade-white);
+  font-weight: 300;
+}
+.hero-link{
+  min-width: 155px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--main-black);
+}
+.hero-link span{
+  text-decoration: underline dotted;
+  text-decoration-color: var(--main-black);
+  text-underline-offset: 4px;
+  position: relative;
+  bottom: 2px;
+}
+.hero-link img{
+  margin-left: 2px;
+  width: 24px;
+}
+.hero-link span,
+.hero-link img{
+  pointer-events: none;
+}
+.hero-link-1{
+  background-color: var(--main-yellow);
+}
+.hero-link-1:hover{
+  background-color: var(--dark-yellow);
+}
+
+.hero-link-2{
+  background-color: var(--main-white);
+  color: var(--main-black);
+  margin-left: 12px;
+}
+.hero-link-2:hover{
+  background-color: var(--shade-white);
+}
+.push-down-hero{
+  display: none;
+}
+
+@media(max-width: 1024px){
+  .hero{
+    min-height: 600px;
+    padding-top: 145px;
+  }
+  .main-title{
+    font-size: var(--fs-50);
+  }
+  .main-subtitle{
+    font-size: var(--fs-30);
+  }
+}
+
+@media(max-width: 750px){
+  .main-title{
+    font-size: var(--fs-36);
+  }
+  .main-subtitle{
+    font-size: var(--fs-24);
+  }
+  .hero-link{
+    min-width: 110px;
+    padding: 8px 6px;
+    font-size: var(--fs-14);
+  }
+  .hero-link img{
+    display: none;
+  }
+  .push-down-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-black);
+    border: 1px solid --main-white;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .push-down-hero img{
+    width: 20px;
+    pointer-events: none;
+  }
+}
+
+@media(max-width: 525px) {
+  .hero{
+    padding-top: 125px;
+    min-height: 500px;
+  }
+  .hero-link{
+    padding: 6px;
+  }
+  .main-title{
+    font-size: var(--fs-24);
+  }
+  .main-subtitle{
+    font-size: var(--fs-20);
+  }
+}
